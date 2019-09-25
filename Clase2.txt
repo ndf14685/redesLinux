@@ -1,0 +1,72 @@
+ifdown 
+ifup 
+ifconfig 
+ip a s
+
+Equipo CENT OS 
+
+Se modifica file: 
+
+/etc/
+
+
+Agregar gateway para acceder a otra red 172.16 
+route add -net 172.16.00 netmask  255.255.0.0 gw 10.1.1.1 
+
+
+
+route -n  ---> Tabla de ruteo 
+
+Si queremos pingear a google no llegamos: Red Inaccesible 
+
+route add default gw 10.1.1.10  ----> Esta es una maquina virtual que configuro que tiene conexion a internet 
+
+Agregar host en internet a
+
+
+------------------------ 
+route
+
+Crear file: 
+route-nombrePlaca 
+
+8.8.8.0/24 via 192.16.0.100
+
+
+Servicio DNS: 
+Servicio que identifica la relacion entre nombre e ip  
+
+
+El archivo de configuracion de DNS es el 
+/etc/resolv.conf 
+
+
+
+LACNIC 
+
+
+BGP ----> Protocolo 
+
+RIP ---> Protocolo (Sistema de ruteo automatico) Calcula saltos, toma metricas, para configurar y reconfigurar rutas de envio (la mas corta)
+
+OSPJ  (Se dejo de usar ) uSA SIEMPRE LA mas corta 
+
+
+Para levantar el servicio con los nuevos datos del server dhcpd  
+service dhcpd -d   
+
+
+Cuando el DHCP le asigna una ip y nombre, actualiza en el DNS. ( /etc/resolv.conf)
+
+
+Servidores de Correos en linux:
+
+                                    SMTP
+PC PC (Servidore de correo ) <--------------------->  PC (Servidore de correo )
+
+
+Protocolo de smtp sirve para enviar y recibir correo, pero no para leer. 
+
+Necesitas el cliente de correo. 
+
+Para poder bajar (NO recibir), necesitas configurar protocolo POP3 o IMAP  para descargar los mails del servidor SMTP 
