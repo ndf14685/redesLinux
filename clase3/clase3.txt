@@ -1,0 +1,20 @@
+Formas de agregar el servidor ssh como demonio en el arranque: 
+
+cron 
+~/.bashrc
+init.d
+
+
+Direccion donde esta la configuracion de SSH 
+cd /etc/ssh 
+nano ssh config
+
+
+Manejar virtuales dentro de un mismo equipo 
+
+
+Nmap para escaneo de red
+
+nmap sirve para escanear en una red INTERNA una ip de la red. 
+
+nmap -v -sS 192.168.11.137 

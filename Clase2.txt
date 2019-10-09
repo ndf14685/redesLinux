@@ -70,3 +70,8 @@ Protocolo de smtp sirve para enviar y recibir correo, pero no para leer.
 Necesitas el cliente de correo. 
 
 Para poder bajar (NO recibir), necesitas configurar protocolo POP3 o IMAP  para descargar los mails del servidor SMTP 
+
+
+
+
+
