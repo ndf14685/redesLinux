@@ -67,3 +67,4 @@ route
 Para ver
 route -n
 
+ip netmask route 
